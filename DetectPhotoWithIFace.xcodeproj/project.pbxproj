@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AAAA5C5ED5519F20669271B8 /* libPods-DetectPhotoWithIFace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F502189B91B4F6B514ADD72 /* libPods-DetectPhotoWithIFace.a */; };
 		EA34DBE92100947B0040FD8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34DBE82100947B0040FD8A /* AppDelegate.m */; };
-		EA34DBEC2100947B0040FD8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34DBEB2100947B0040FD8A /* ViewController.m */; };
+		EA34DBEC2100947B0040FD8A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA34DBEB2100947B0040FD8A /* ViewController.mm */; };
 		EA34DBEF2100947B0040FD8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34DBED2100947B0040FD8A /* Main.storyboard */; };
 		EA34DBF12100947C0040FD8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA34DBF02100947C0040FD8A /* Assets.xcassets */; };
 		EA34DBF42100947C0040FD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34DBF22100947C0040FD8A /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		EA34DBE72100947B0040FD8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA34DBE82100947B0040FD8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA34DBEA2100947B0040FD8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA34DBEB2100947B0040FD8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA34DBEB2100947B0040FD8A /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		EA34DBEE2100947B0040FD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA34DBF02100947C0040FD8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA34DBF32100947C0040FD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				EA34DBE72100947B0040FD8A /* AppDelegate.h */,
 				EA34DBE82100947B0040FD8A /* AppDelegate.m */,
 				EA34DBEA2100947B0040FD8A /* ViewController.h */,
-				EA34DBEB2100947B0040FD8A /* ViewController.m */,
+				EA34DBEB2100947B0040FD8A /* ViewController.mm */,
 				EA34DBED2100947B0040FD8A /* Main.storyboard */,
 				EA34DBF02100947C0040FD8A /* Assets.xcassets */,
 				EA34DBF22100947C0040FD8A /* LaunchScreen.storyboard */,
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA34DBEC2100947B0040FD8A /* ViewController.m in Sources */,
+				EA34DBEC2100947B0040FD8A /* ViewController.mm in Sources */,
 				EA34DBF72100947C0040FD8A /* main.m in Sources */,
 				EA34DBE92100947B0040FD8A /* AppDelegate.m in Sources */,
 			);
@@ -333,7 +333,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 978PK4NZFL;
 				INFOPLIST_FILE = DetectPhotoWithIFace/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sycomore.DetectPhotoWithIFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +351,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 978PK4NZFL;
 				INFOPLIST_FILE = DetectPhotoWithIFace/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sycomore.DetectPhotoWithIFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

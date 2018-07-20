@@ -12,7 +12,11 @@
 @interface ViewController : UIViewController
 {
     AFHTTPSessionManager *manager;
+    NSMutableArray *listPerson;
+    NSMutableArray *listLinkPerson;
+    int counter;
 }
 
+@property (weak, nonatomic) IBOutlet UIButton *getArrLinkImgBtn;
 @end
 
